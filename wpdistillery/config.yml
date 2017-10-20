@@ -19,16 +19,16 @@ wpfolder: public
 wpversion: latest
 
 # language/timezone
-wplocale: en_US
-timezone: "America/New_York"
+wplocale: en_CA
+timezone: "America/Vancouver"
 
 # admin user settings
 admin:
-  user: admin
+  user: administrator
   password: admin
-  email: mail@domain.tld
-  first_name: ""
-  last_name: ""
+  email: wordpress@snaptech.com
+  first_name: "Admin"
+  last_name: "User"
 
 # scotch box db access
 db:
@@ -41,9 +41,9 @@ db:
 #################################################################
 
 wpsettings:
-  url: wpdistillery.dev
-  title: Example Title
-  description: Example Description
+  url: launchpad.test
+  title: Launchpad Website
+  description: Template
   permalink_structure: "/%postname%/"
   thumbnail_width: 150
   thumbnail_height: 150
@@ -54,7 +54,7 @@ wpsettings:
   # use page as frontpage
   page_on_front: true
   # define frontpage name (requires `page_on_front: true`)
-  frontpage_name: Example Front Page
+  frontpage_name: Home
   # automatic conversion of smilies
   convert_smilies: false
 
@@ -63,9 +63,9 @@ wpsettings:
 
 # theme to install, choose new name in 'rename' or leave empty
 theme:
-  name: WPSeed
-  rename: ""
-  url: "https://github.com/flurinduerst/WPSeed/archive/master.zip"
+  name: FoundationPress
+  rename: "Launchpad"
+  url: "https://github.com/johnfrancisli/FoundationPress/archive/master.zip"
 
 # PLUGINS
 #################################################################
@@ -79,12 +79,19 @@ plugins_active:
   - regenerate-thumbnails
   - simple-page-ordering
   - user-switching
+  - post-thumbnail-editor
+  - wp-security-audit-log
+  - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.2.5.8.zip"
+  - "http://plugins.kanpachi.net/gravityforms/gravityformsmailchimp_4.2.4.zip"
+  - "http://plugins.kanpachi.net/site-analytics/site-analytics.zip"
+  - "http://plugins.kanpachi.net/visualcomposer/js_composer-5.4.zip"
+  - "http://plugins.kanpachi.net/templatera/templatera.zip"
 
 # plugins to install
 plugins_inactive:
   #development
   - custom-post-type-ui
-  - search-and-replace
+  - better-search-replace
   - capability-manager-enhanced
   #administration
   - adminimize
@@ -92,9 +99,7 @@ plugins_inactive:
   - admin-menu-reorder
   # seo
   - autodescription
-  #security/backup
-  - wp-security-audit-log
-  - backwpup
+  - wordpress-seo
 
 # WPDISTILLERY SETUP
 ####################################################################
