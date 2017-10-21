@@ -42,7 +42,7 @@ db:
 
 wpsettings:
   url: launchpad.test
-  title: Launchpad Website
+  title: launchpad Website
   description: Template
   permalink_structure: "/%postname%/"
   thumbnail_width: 150
@@ -64,7 +64,7 @@ wpsettings:
 # theme to install, choose new name in 'rename' or leave empty
 theme:
   name: FoundationPress
-  rename: "Launchpad"
+  rename: "launchpad"
   url: "https://github.com/johnfrancisli/FoundationPress/archive/master.zip"
 
 # PLUGINS
