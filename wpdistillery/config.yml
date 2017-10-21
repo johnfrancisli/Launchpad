@@ -63,9 +63,9 @@ wpsettings:
 
 # theme to install, choose new name in 'rename' or leave empty
 theme:
-  name: FoundationPress
+  name: Launchpad
   rename: "launchpad"
-  url: "https://github.com/johnfrancisli/FoundationPress/archive/master.zip"
+  url: "https://github.com/johnfrancisli/Launchpad-Theme/archive/master.zip"
 
 # PLUGINS
 #################################################################
