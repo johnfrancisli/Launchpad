@@ -24,11 +24,11 @@ timezone: "America/Vancouver"
 
 # admin user settings
 admin:
-  user: administrator
-  password: admin
-  email: wordpress@snaptech.com
-  first_name: "Admin"
-  last_name: "User"
+  user: launchpad
+  password: launchpad2017
+  email: launchpad@launchpad.test
+  first_name: "Launchpad"
+  last_name: "Admin"
 
 # scotch box db access
 db:
@@ -42,7 +42,7 @@ db:
 
 wpsettings:
   url: launchpad.test
-  title: launchpad Website
+  title: Launchpad Website
   description: Template
   permalink_structure: "/%postname%/"
   thumbnail_width: 150
@@ -63,7 +63,7 @@ wpsettings:
 
 # theme to install, choose new name in 'rename' or leave empty
 theme:
-  name: Launchpad
+  name: Launchpad-Theme
   rename: "launchpad"
   url: "https://github.com/johnfrancisli/Launchpad-Theme/archive/master.zip"
 
