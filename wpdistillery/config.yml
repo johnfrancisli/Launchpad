@@ -81,6 +81,7 @@ plugins_active:
   - user-switching
   - post-thumbnail-editor
   - wp-security-audit-log
+  - bulk-page-creator
   - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.2.5.8.zip"
   - "http://plugins.kanpachi.net/gravityforms/gravityformsmailchimp_4.2.4.zip"
   - "http://plugins.kanpachi.net/site-analytics/site-analytics.zip"
