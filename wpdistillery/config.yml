@@ -63,9 +63,9 @@ wpsettings:
 
 # theme to install, choose new name in 'rename' or leave empty
 theme:
-  name: Launchpad-Theme
-  rename: "launchpad"
-  url: "https://github.com/johnfrancisli/Launchpad-Theme/archive/master.zip"
+  name: WPSeed
+  rename: ""
+  url: "https://github.com/flurinduerst/WPSeed/archive/master.zip"
 
 # PLUGINS
 #################################################################
@@ -82,11 +82,13 @@ plugins_active:
   - post-thumbnail-editor
   - wp-security-audit-log
   - bulk-page-creator
-  - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.2.5.8.zip"
+  - simple-301-redirects
+  - simple-301-redirects-addon-bulk-uploader
+  - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.2.5.21.zip"
   - "http://plugins.kanpachi.net/gravityforms/gravityformsmailchimp_4.2.4.zip"
   - "http://plugins.kanpachi.net/site-analytics/site-analytics.zip"
   - "http://plugins.kanpachi.net/visualcomposer/js_composer-5.5.zip"
-  - "http://plugins.kanpachi.net/templatera/templatera.zip"
+  - "http://plugins.kanpachi.net/templatera/templatera-2017-10-27.zip"
   - "http://plugins.kanpachi.net/acf/advanced-custom-fields-pro-5.6.7.zip"
   - wordpress-seo
 

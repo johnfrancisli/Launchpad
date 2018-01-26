@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="D:\Projects\Launchpad\public\wp-content\themes\Launchpad-Theme" vcs="Git" />
     <mapping directory="D:\Projects\Launchpad\public\wp-content\themes\launchpad" vcs="Git" />
   </component>
 </project>
