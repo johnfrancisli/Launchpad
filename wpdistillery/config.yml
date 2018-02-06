@@ -63,9 +63,9 @@ wpsettings:
 
 # theme to install, choose new name in 'rename' or leave empty
 theme:
-  name: WPSeed
+  name: FoundationPress
   rename: ""
-  url: "https://github.com/flurinduerst/WPSeed/archive/master.zip"
+  url: "https://github.com/olefredrik/FoundationPress/archive/master.zip"
 
 # PLUGINS
 #################################################################
