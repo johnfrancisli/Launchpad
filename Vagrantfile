@@ -11,6 +11,8 @@ Vagrant.configure("2") do |config|
     config.vm.network "private_network", ip: "192.168.33.10"
     config.vm.hostname = "launchpad.test"
     config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
+    config.ssh.username = "vagrant"
+    config.ssh.password = "vagrant"
 
     # Windows Support
     if Vagrant::Util::Platform.windows?
