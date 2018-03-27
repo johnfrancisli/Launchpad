@@ -41,7 +41,7 @@ db:
 #################################################################
 
 wpsettings:
-  url: launchpad.test
+  url: hicube.test
   title: Launchpad Website
   description: Template
   permalink_structure: "/%postname%/"
@@ -75,7 +75,6 @@ plugins_active:
   - disable-comments
   - duplicate-post
   - enable-media-replace
-  - favicon-by-realfavicongenerator
   - regenerate-thumbnails
   - simple-page-ordering
   - user-switching
@@ -85,6 +84,7 @@ plugins_active:
   - simple-301-redirects
   - simple-301-redirects-addon-bulk-uploader
   - widget-css-classes
+  - wp-smushit
   - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.2.6.zip"
   - "http://plugins.kanpachi.net/gravityforms/gravityformsmailchimp_4.2.7.zip"
   - "http://plugins.kanpachi.net/site-analytics/site-analytics.zip"
@@ -96,7 +96,6 @@ plugins_active:
 # plugins to install
 plugins_inactive:
   #development
-  - custom-post-type-ui
   - better-search-replace
   - capability-manager-enhanced
   #administration
