@@ -41,7 +41,7 @@ db:
 #################################################################
 
 wpsettings:
-  url: hicube.test
+  url: launchpad.test
   title: Launchpad Website
   description: Template
   permalink_structure: "/%postname%/"
