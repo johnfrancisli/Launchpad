@@ -85,12 +85,12 @@ plugins_active:
   - simple-301-redirects-addon-bulk-uploader
   - widget-css-classes
   - wp-smushit
-  - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.2.6.zip"
+  - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.3.1.12.zip"
   - "http://plugins.kanpachi.net/gravityforms/gravityformsmailchimp_4.2.7.zip"
   - "http://plugins.kanpachi.net/site-analytics/site-analytics.zip"
   - "http://plugins.kanpachi.net/visualcomposer/js_composer-5.4.7.zip"
   - "http://plugins.kanpachi.net/templatera/templatera-2017-10-27.zip"
-  - "http://plugins.kanpachi.net/acf/advanced-custom-fields-pro-5.6.9.zip"
+  - "http://plugins.kanpachi.net/acf/advanced-custom-fields-pro-5.6.10.zip"
   - wordpress-seo
 
 # plugins to install
