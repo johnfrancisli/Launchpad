@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.box = "scotch/box-pro"
     config.vm.network "private_network", ip: "192.168.33.10"
-    config.vm.hostname = "hicube.test"
+    config.vm.hostname = "launchpad.test"
 
     config.ssh.username = "vagrant"
     config.ssh.password = "vagrant"
