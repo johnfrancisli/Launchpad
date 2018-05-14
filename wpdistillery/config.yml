@@ -79,7 +79,6 @@ plugins_active:
   - simple-page-ordering
   - user-switching
   - post-thumbnail-editor
-  - wp-security-audit-log
   - bulk-page-creator
   - simple-301-redirects
   - simple-301-redirects-addon-bulk-uploader
@@ -98,6 +97,7 @@ plugins_inactive:
   #development
   - better-search-replace
   - capability-manager-enhanced
+  - wp-security-audit-log
   #administration
   - adminimize
   - admin-menu-editor
