@@ -83,6 +83,7 @@ plugins_active:
   - simple-301-redirects
   - simple-301-redirects-addon-bulk-uploader
   - widget-css-classes
+  - google-sitemap-generator
   - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.3.1.12.zip"
   - "http://plugins.kanpachi.net/gravityforms/gravityformsmailchimp_4.2.7.zip"
   - "http://plugins.kanpachi.net/site-analytics/site-analytics.zip"
@@ -94,7 +95,6 @@ plugins_active:
 # plugins to install
 plugins_inactive:
   #development
-  - wp-smushit
   - better-search-replace
   - capability-manager-enhanced
   - wp-security-audit-log
