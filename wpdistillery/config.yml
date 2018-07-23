@@ -84,10 +84,11 @@ plugins_active:
   - simple-301-redirects-addon-bulk-uploader
   - widget-css-classes
   - google-sitemap-generator
-  - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.3.1.12.zip"
-  - "http://plugins.kanpachi.net/gravityforms/gravityformsmailchimp_4.2.7.zip"
+  - "http://plugins.kanpachi.net/gravityforms/gravityforms_2.3.3.1.zip"
+  - "http://plugins.kanpachi.net/gravityforms/gravityformsgutenberg_1.0-beta-4.zip"
+  - "http://plugins.kanpachi.net/gravityforms/gravityformsmailchimp_4.3.zip"
   - "http://plugins.kanpachi.net/site-analytics/site-analytics.zip"
-  - "http://plugins.kanpachi.net/visualcomposer/js_composer-5.4.7.zip"
+  - "http://plugins.kanpachi.net/visualcomposer/js_composer-5.5.2.zip"
   - "http://plugins.kanpachi.net/templatera/templatera-2017-10-27.zip"
   - "http://plugins.kanpachi.net/acf/advanced-custom-fields-pro-5.6.10.zip"
   - wordpress-seo
@@ -96,14 +97,14 @@ plugins_active:
 plugins_inactive:
   #development
   - better-search-replace
-  - capability-manager-enhanced
-  - wp-security-audit-log
+  #- capability-manager-enhanced
+  #- wp-security-audit-log
   #administration
-  - adminimize
-  - admin-menu-editor
-  - admin-menu-reorder
+  #- adminimize
+  #- admin-menu-editor
+  #- admin-menu-reorder
   # seo
-  - autodescription
+  #- autodescription
 
 # WPDISTILLERY SETUP
 ####################################################################
