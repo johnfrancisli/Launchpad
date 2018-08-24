@@ -22,7 +22,7 @@ timezone: "America/Vancouver"
 # admin user settings
 admin:
   user: launchpad
-  password: launchpad2017
+  password: launchpad2018
   email: launchpad@launchpad.test
   first_name: "Launchpad"
   last_name: "Admin"
@@ -40,7 +40,7 @@ db:
 wpsettings:
   url: launchpad.test
   title: Launchpad Website
-  description: Template
+  description: Template Site for Web Dev
   permalink_structure: "/%postname%/"
   thumbnail_width: 150
   thumbnail_height: 150
