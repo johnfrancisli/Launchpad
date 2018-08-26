@@ -5,7 +5,7 @@
 # Author: Flurin Dürst
 # URL: https://wpdistillery.org
 #
-# File version 1.8.3
+# File version 1.7.1
 
 # ERROR Handler
 # ask user to continue on error
@@ -63,15 +63,13 @@ cd ..
 # READ CONFIG
 eval $(parse_yaml wpdistillery/config.yml "CONF_")
 
-
-# CHECK FOR ROOT-DIR
-if [ ! -d "public" ]; then
-  printf "${BLU}»»» creating root dir \"public\"...${NC}\n"
-  mkdir public
+# CHECK WP FOLDER
+if [ ! -d "$CONF_wpfolder" ]; then
+  mkdir $CONF_wpfolder
+  printf "${BLU}»»» creating WP Folder $CONF_wpfolder...${NC}\n"
 fi
 
-# navigate to root dir
-cd public
+cd $CONF_wpfolder
 
 # INSTALL WORDPRESS
 if $CONF_setup_wp ; then
@@ -80,7 +78,7 @@ if $CONF_setup_wp ; then
   wp core download --locale=$CONF_wplocale --version=$CONF_wpversion
   printf "${BLU}»»» creating wp-config...${NC}\n"
   wp core config --dbname=$CONF_db_name --dbuser=$CONF_db_user --dbpass=$CONF_db_pass --dbprefix=$CONF_db_prefix --locale=$CONF_wplocale
-  printf "${BLU}»»» installing WordPress...${NC}\n"
+  printf "${BLU}»»» installing wordpress...${NC}\n"
   wp core install --url=$CONF_wpsettings_url --title="$CONF_wpsettings_title" --admin_user=$CONF_admin_user --admin_password=$CONF_admin_password --admin_email=$CONF_admin_email --skip-email
   wp user update 1 --first_name=$CONF_admin_first_name --last_name=$CONF_admin_last_name
 else
@@ -118,11 +116,11 @@ else
   printf "${BLU}>>> skipping settings...${NC}\n"
 fi
 
-# INSTALL/REMOVE THEME
+# INSTALL THEME
 if $CONF_setup_theme ; then
-  printf "${BRN}[=== CONFIGURE THEME ===]${NC}\n"
+  printf "${BRN}[=== INSTALL $CONF_theme_name ===]${NC}\n"
   printf "${BLU}»»» downloading $CONF_theme_name...${NC}\n"
-  wp theme install $CONF_theme_url --force
+  wp theme install $CONF_theme_url
   printf "${BLU}»»» installing/activating $CONF_theme_name...${NC}\n"
   if [ ! -z "$CONF_theme_rename" ]; then
     # rename theme
@@ -132,21 +130,6 @@ if $CONF_setup_theme ; then
   else
     wp theme activate $CONF_theme_name
   fi
-  if [ ! -z "$CONF_theme_remove" ]; then
-    printf "${BLU}»»» removing default themes...${NC}\n"
-    # loop trough themes that shall be removed
-    for loopedtheme in "${CONF_theme_remove[@]}"
-    do :
-      #make sure the theme to delete is not the chosen one
-      if [ $loopedtheme != $CONF_theme_name ]; then
-        printf "${BLU}» removing $loopedtheme...${NC}\n"
-        wp theme delete $loopedtheme
-
-      fi
-    done
-    # end loop
-  fi
-
 else
   printf "${BLU}>>> skipping theme installation...${NC}\n"
 fi
@@ -169,6 +152,12 @@ if $CONF_setup_cleanup ; then
     if [ -f license.txt ];    then rm license.txt;    fi
     # delete german files
     if [ -f liesmich.html ];  then rm liesmich.html;  fi
+  fi
+  if $CONF_setup_cleanup_themes ; then
+    printf "${BLU}»»» removing default themes...${NC}\n"
+    wp theme delete twentyfifteen
+    wp theme delete twentysixteen
+    wp theme delete twentyseventeen
   fi
 else
   printf "${BLU}>>> skipping Cleanup...${NC}\n"

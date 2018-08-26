@@ -21,10 +21,10 @@ Vagrant.configure("2") do |config|
       run: "always", privileged: false
     end
 
-    # Run Provisioning – executed within the first `vagrant up` and every `vagrant provision`
+    # Run Provisioning – executed within the first `vagrant up` and every `vagrant provision`
     config.vm.provision "shell", path: "wpdistillery/provision.sh"
 
-    # OPTIONAL - Update WordPress and all Plugins on vagrant up – executed within every `vagrant up`
+    # OPTIONAL - Update WordPress and all Plugins on vagrant up – executed within every `vagrant up`
     config.vm.provision "shell", inline: "echo \"== Update WordPress & Plugins ==\" && cd /var/www/public && wp core update && wp plugin update --all", run: "always", privileged: false
 
     # OPTIONAL - Enable NFS. Make sure to remove line 13 (See https://stefanwrobel.com/how-to-make-vagrant-performance-not-suck)
